@@ -1,2 +1,0 @@
-# getme-ryde
-getme-ryde
