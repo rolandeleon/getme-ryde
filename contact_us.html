@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get an Estimate | Contact GetMe-Ryde</title>
+    <meta name="description" content="Request a flat rate price estimate or call GetMe-Ryde immediately for fast, cashless dispatch taxi services in your area. Open 24 hours.">
+    <link rel="canonical" href="https://getme-ryde.com/contact_us.html">
+    <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NSPVQK9R');</script>
+</head>
+<body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSPVQK9R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <nav class="header-bar">
+        <a href="index.html" class="logo">GetMe-Ryde</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="contact_us.html" class="active">Contact Us</a>
+            <a href="es/contact_us.html">Español</a>
+        </div>
+    </nav>
+
+    <main style="padding-top: 130px;">
+        <h1 class="section-title">Get In Touch</h1>
+        <p class="section-subtitle">Obtain an immediate ride quote or reach our central dispatch agents instantly.</p>
+
+        <div class="contact-wrapper">
+            <div class="form-side">
+                <form class="clean-form" action="https://formsubmit.co/admin1@getme-ryde.com" method="POST" onsubmit="return validateConsent();">
+                    <input type="hidden" name="_next" value="https://getme-ryde.com/index.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required inputmode="tel">
+
+                    <label for="service">Requested Service</label>
+                    <input type="text" id="service" name="service" placeholder="Airport Transfer / Local Commute" required>
+
+                    <label for="message">Ride Details</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Specify pick-up address, drop-off point, and schedule..." required></textarea>
+
+                    <label class="consent-label">
+                        <input id="sms-checkbox" type="checkbox" name="consent" required>
+                        <span>By checking this box you are consenting to receive text messages from GetMe-Ryde about transportation services. Opt out at any time by texting 'STOP' to +18777668002 or emailing support@getme-ryde.com. Msg/data rates apply. <a href="terms.html" target="_blank" style="color:var(--white);">See Privacy Policy</a>.</span>
+                    </label>
+
+                    <button type="submit">SUBMIT DISPATCH REQUEST</button>
+                </form>
+            </div>
+
+            <div class="info-side">
+                <h3>Direct Hub Operations</h3>
+                <p style="color: var(--text-muted); margin-top: 5px;">GetMe-Ryde provides professional 24/7 ride dispatch across our listed urban networks.</p>
+                
+                <p><strong>📍 Coverage Area:</strong> Anywhere you need us across service regions</p>
+                <p><strong>📞 Dispatch Hot-Line:</strong> <a href="tel:+18777668002" style="color: var(--primary); font-weight: bold; text-decoration: none;">+1 (877) 766-8002</a></p>
+                <p><strong>📧 Corporate Support:</strong> support@getme-ryde.com</p>
+                
+                <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px;">
+                    <p style="font-size: 14px; color: var(--text-muted);">💳 <strong>Notice:</strong> Drivers do not accept cash. All payments must be securely validated via credit or debit card at time of booking or terminal arrival.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="es/contact_us.html">Español</a>
+        </div>
+        <p style="font-size: 13px; color: var(--text-muted);">&copy; 2026 GetMe-Ryde LLC. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function validateConsent() {
+            const checkbox = document.getElementById('sms-checkbox');
+            if(!checkbox.checked) {
+                alert("You must consent to the communication policies to submit a booking inquiry.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
